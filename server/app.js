@@ -4,9 +4,12 @@ const connectDB = require("./config/db,js")
 const dotenv = require("dotenv")
 const courseRoute = require("./routes/courseRoutes")
 const authRoute = require("./routes/authRoutes")
+const cors = require("cors")
+
 
 const app=express()
 
+app.use(cors())
 app.use(express.json())
 dotenv.config()
 

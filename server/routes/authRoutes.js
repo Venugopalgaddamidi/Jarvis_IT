@@ -1,5 +1,5 @@
 const express=require("express")
-const {login,register}=require("../contollers/authContoller")
+const {login,register}=require("../contollers/authControllers")
 const authRoute=express.Router()
 
 authRoute.post("/login",login)
